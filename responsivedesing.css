@@ -1,0 +1,580 @@
+*{
+margin: 0px;
+}
+.html{
+  scroll-behavior: smooth;
+}
+/* ----------------------------------------------------------- */
+
+/* logo is here start */
+.whale{
+border-radius: 100px;
+max-width: 10%;
+height: auto;
+display: flex;
+justify-content: left;
+position: absolute;
+top: -30px;
+z-index: 0;
+}
+
+/* bu kısım logonun responsive kısmı başlangıç */
+/* Desktop  */
+@media screen and (max-width:1280px),(max-width:1024px){
+  .whale{
+    position: absolute;
+    top: -20px;
+  }
+}
+/* tablet */
+@media screen and (max-width:900px),(max-width:768px){
+  .whale{
+    position: absolute;
+    top: -10px;
+  }
+}
+/* phone */
+@media screen and (max-width:600px),(max-width:480px){
+  .whale{
+    position: absolute;
+    top: 0px;
+  }
+}
+/* phone */
+
+@media screen and (max-width:300px){
+  .whale{
+    position: absolute;
+    top: 10px;
+  }
+}
+
+/* bu kısım logonun responsive kısmı başlangıç */
+
+/* logo is here finish  */
+/* ----------------------------------------------------------- */
+
+/* remove dot from links start */
+.navbar_ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+.text_Hover:hover{
+  color: #4682A9;
+}
+.subscribe_Color{
+  color: rgb(231, 66, 66);
+}
+/* remove dot from links finish */
+/* ----------------------------------------------------------- */
+
+/* properties of links start */
+
+.navbar_ul,a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* properties of links finish */
+/* ----------------------------------------------------------- */
+
+.navbar_general{
+    opacity: 10px;
+background-color: rgba(255, 255, 255, 0.5);  
+  opacity: 10px;
+   
+}
+
+@media screen and (max-width:600px) {
+  .body{
+ font-size: 16px;
+  }  
+  }
+/* bu kısım navbarı responsive yaptığımız kısım baslangıc */
+/* ip 14 pro max */
+@media screen and (max-width:636px), (max-width:300px) {
+.navbar_general{
+font-size: .7rem;
+padding: .1rem; 
+margin-right: -10px;
+}  
+}
+
+/* bu kısım navbarı responsive yaptığımız kısım baslangıc */
+
+/* ----------------------------------------------------------- */
+
+/* navbar text editng start */
+
+.navbar_inside{
+    display: flex;
+    justify-content: right;
+    font-size: 1.3em;
+    padding: 1.2em;
+    font-family:'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+  
+    
+}
+/* ----------------------------------------------------------- */
+
+/* navbar text editng finish */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 or 9:16 aspect ratio for widescreen videos */
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+
+  @media screen and (max-width:430px) {
+    .video-container {
+width: 100%;
+position: relative;
+left: 12.2%;
+    }
+
+    
+  }
+/* ----------------------------------------------------------- */
+
+  /* orta kısmın margib ve padding değerleri burda ayarlanıyor */
+
+  /* genel kısım burda bulunuyor */
+
+  .main_Page-Contents{
+    margin-top: 20rem;
+  }
+  /* genel kısım burda bitiyor */
+/* ----------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------- */
+
+    /* orta kısmın margib ve padding değerleri burda ayarkanma bitiyor */
+
+/* ----------------------------------------------------------- */
+
+  /* slogan olduğu kısım */
+.main_Page_Slogan{
+
+    font-size: 2rem;
+    text-align: center;
+}
+
+#main_Page_Slogan_H1{
+  font-family: 'Castoro Titling', serif;
+  letter-spacing: 2px;
+  animation: slogan_H1 1.5s  ease-in-out ;
+}
+
+  #main_Page_Slogan_P{
+    font-family: 'Almendra SC', serif; 
+    letter-spacing: 1px;    
+    font-size: 1.8rem;
+    animation: slogan_P 2s ease-in-out ;
+
+  }
+/* slogan ve  kısmı responsşve 14 pro max */
+
+@media screen and (max-width:430px  ) {
+
+  .main_Page_Slogan{
+position: relative;
+left: 10%;
+  }
+}
+/* slogan ve  kısmı responsşve 14 pro max */
+
+/* slogan kısmı baslık ve sloganın animasyon kısmı */
+/* ----------------------------------------------------------- */
+
+/* bu kısım sirket ismaxin yukardan aşşağıya doğru geldiği kısım  */
+@keyframes slogan_H1{
+    from{
+      position: relative;
+      bottom: 40px;
+      opacity: 0;
+    }
+    to{
+      position: relative;
+      bottom: 0px;
+      
+    }
+}
+/* ----------------------------------------------------------- */
+/* bu kısım sloganın yukardan aşşağıya doğru geldiği kısım  */
+
+@keyframes slogan_P {
+  from{
+    position: relative;
+    top: 40px;
+    opacity: 0;
+  }
+
+  to{
+    position: relative;
+    top: 0px;
+   
+  }
+}
+
+
+
+/* slogan kısmı baslık ve sloganın animasyon kısmı bitis*/
+/* ----------------------------------------------------------- */
+
+
+    /* amac kısmı ve abone ol kısmı burada baslıyor */
+    .main_Page_Purpose{
+      margin-top: 20rem;
+      text-align: center;
+    }
+    
+    .main_Page_Purpose_H1{
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      letter-spacing: 2px;
+      font-family: 'Cinzel', serif;
+    }
+    
+    .main_Page_Purpose_P{
+      font-size: 1.2rem;
+      word-spacing: 2px;
+      letter-spacing: 1px;
+      word-wrap: break-word;
+    }
+/* amac kısmı responsşve 14 pro max */
+    @media screen and (max-width:430px  ) {
+
+      .main_Page_Purpose{
+    position: relative;
+    left: 10%;
+      }
+    }
+    /* amac kısmı responsşve 14 pro max */
+
+        /* amac kısmı ve abone ol kısmı burada bitiyor */
+/* ----------------------------------------------------------- */
+/* main_Page_İnformation kısmı baslangıc */
+
+.main_Page_İnformation{
+  margin-top: 20rem;
+  text-align: center;
+}
+/* information responsive kısmı ip14 pro max */
+@media screen and (max-width:430px  ) {
+
+  .main_Page_İnformation{
+position: relative;
+left: 10%;
+  }
+}
+/* information responsive kısmı ip14 pro max */
+
+.main_Page_İnformation_H1{
+  font-size: 2rem;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  font-family: 'Cinzel', serif;
+}
+
+.main_Page_İnformation_Box{
+  margin-top: 5rem;
+}
+
+.main_Page_İnformation_Box-First{
+  display: inline-block;
+  letter-spacing:2px;
+  padding: 1rem;
+  word-wrap: break-word;
+  border-radius: 10rem;
+  border: 1px solid black;
+  background-color:#91C8E4;
+  color:#F6F4EB;
+}
+.main_Page_İnformation_Box-First:hover{
+  background-color: #F6F4EB;
+  color:#91C8E4;
+}
+
+.main_Page_İnformation_Box-Second{
+  display: inline-block;
+  letter-spacing:2px;
+  padding: 1rem;
+  word-wrap: break-word;
+  border-radius: 10rem;
+  border: 1px solid black;
+  background-color: #91C8E4;
+  color:    #F6F4EB;
+  margin-left: 1rem;
+}
+.main_Page_İnformation_Box-Second:hover{
+  background-color:  #F6F4EB;
+  color:  #91C8E4;
+}
+
+.main_Page_İnformation_Box-Three{
+  display: inline-block;
+  letter-spacing:2px;
+  padding: 1rem;
+  word-wrap: break-word;
+  border-radius: 10rem;
+  border: 1px solid black;
+  background-color:#91C8E4;
+  color:#F6F4EB;
+  margin-left: 1rem;
+  
+
+}
+.main_Page_İnformation_Box-Three:hover{
+  background-color: #F6F4EB;
+  color:#91C8E4;
+}
+  
+
+/* main_Page_İnformation kısmı  bitiş*/
+
+/* istatistik kısmı baslangıc */
+
+/* h1 ve h2 kısmı  */
+
+.main_Page_Statistics-First h1{
+position: relative;
+bottom:.5rem ;
+font-size: 1rem;
+letter-spacing: 2px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main_Page_Statistics-First h2{
+  font-size: 3rem;
+ }
+
+ /* istatistik responsive dizaynı 14 pro max */
+
+ @media screen and (max-width:430px  ) {
+.main_Page_Statistics-H2{
+  position: relative;
+  left: 10%;
+      }
+  .main_Page_Statistics-First{
+    position: relative;
+    left: 52.5%;
+  }
+  .main_Page_Statistics-Second{
+    position: relative;
+    left: 6%;
+    top: 12rem;
+  }
+  .main_Page_Statistics-Three{
+    position: relative;
+    right: 41%;
+    top: 24rem;
+
+  }
+}
+
+@media screen and (max-width:630px) {
+  .main_Page_Statistics{
+    margin-left: -2rem;
+    
+  }
+ 
+  }
+ /* istatistik responsive dizaynı 14 pro max */
+
+
+
+.main_Page_Statistics-Second h1{
+  position: relative;
+  bottom:.5rem ;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main_Page_Statistics-Second h2{
+  font-size: 3rem;
+ }
+
+
+.main_Page_Statistics-Three h1{
+  position: relative;
+bottom:.5rem ;
+font-size: 1rem;
+letter-spacing: 2px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main_Page_Statistics-Three h2{
+  font-size: 3rem;
+ }
+/* h1 ve h2 kısmı  */
+
+
+
+.main_Page_Statistics{
+text-align: center;
+margin-top: 10rem;
+
+}
+
+
+.main_Page_Statistics-H2{
+text-align: center;
+margin-top: 10rem;
+letter-spacing: 2px;
+font-size: 1.7rem;
+font-family: 'Cinzel', serif;
+
+}
+
+.main_Page_Statistics-Box{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.main_Page_Statistics-First{
+  border: 1px solid black;
+  border-radius: 1.2rem;
+margin-left: 2rem;
+padding: 3rem;
+box-shadow: 10px 10px 2px #4682A9;
+
+}
+.main_Page_Statistics-First:hover{
+  box-shadow: 10px 10px 2px #749BC2;  
+}
+
+.main_Page_Statistics-Second{
+  border: 1px solid black;
+  border-radius: 1.2rem;
+  margin-left: 2rem;
+  padding: 3rem;
+  box-shadow: 10px 10px 2px #4682A9; 
+  }
+.main_Page_Statistics-Second:hover{
+  box-shadow: 10px 10px 2px #749BC2;    
+
+}
+
+
+  .main_Page_Statistics-Three{
+    border: 1px solid black;
+    border-radius: 1.2rem;
+    margin-left: 2rem;
+    padding: 2.5rem;
+    box-shadow: 10px 10px 2px #4682A9;  
+    }
+
+.main_Page_Statistics-Three:hover{
+  box-shadow: 10px 10px 2px #749BC2;    
+
+}
+
+
+
+
+/* istatistik kısmı bitiş */
+
+
+
+/* footer kısmı başlangıc  */
+
+
+.main_Page-Footer{
+  background-color:#F6F4EB;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30rem;
+  padding-bottom: 5rem;
+}
+
+.main_Page-Footer_Content{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  
+}
+.main_Page-Footer_Content-Links h2{
+  color: #749BC2;
+  font-family: 'Alegreya', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Orbitron', sans-serif;
+}
+.main_Page-Footer_Content-Links{
+  /* padding-right: 1rem; */
+  font-size:1.2rem;
+  letter-spacing: 2px;
+  font-family: 'Alegreya', serif;
+  font-family: 'Cinzel', serif;
+}
+
+.main_Page-Footer_Content-SocialMedia h2{
+  color: #749BC2;
+  font-family: 'Alegreya', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Orbitron', sans-serif;
+}
+
+.main_Page-Footer_Content-SocialMedia{
+  padding-right: 2em;
+  letter-spacing: 2px;
+  font-family: 'Alegreya', serif;
+  font-family: 'Cinzel', serif;
+  margin-left: 1rem;
+}
+.main_Page-Footer_Content-differentGroup{
+letter-spacing: 1px;
+font-family: 'Alegreya', serif;
+  font-family: 'Cinzel', serif;
+  margin-left: 2rem;
+}
+.main_Page-Footer_Content-differentGroup h2{
+  color: #749BC2;
+  font-family: 'Alegreya', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Orbitron', sans-serif;
+}
+/* footer kısmı bitis  */
+
+/* footer kısmı responsive dizayn ip14 pro max */
+
+@media screen and (max-width:430px) {
+  .main_Page-Footer{
+   position: relative;
+   left: 0%;
+   padding: 0px 17rem;
+   text-align: left;
+  
+  }
+
+
+  
+}
+
+/* footer kısmı responsive dizayn ip14 pro max */
+
+
+
+
+/* son yer Copryting kısmı baslangıc */
+.main_Page-Copryting{
+  text-align: center;
+  font-size: 1.2rem;
+  background-color:#749BC2;
+} 
+
+/* son yer Copryting kısmı bitis */
